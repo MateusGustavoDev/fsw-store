@@ -33,7 +33,7 @@ export function SheetMenu() {
   return (
     <Sheet>
       <SheetTrigger>
-        <Button variant="outline" className="border border-border rounded p-2">
+        <Button variant="outline" className="border border-border rounded-lg p-2">
           <AlignJustify size={22} />
         </Button>
       </SheetTrigger>
