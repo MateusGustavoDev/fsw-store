@@ -21,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={poppins.className}>
         <Providers>
           <Header />
-          {children}
+          <div className="min-h-screen">{children}</div>
           <Footer />
         </Providers>
       </body>
