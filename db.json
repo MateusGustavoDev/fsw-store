@@ -1,0 +1,539 @@
+{
+    "categories": [
+      {
+        "name": "Mouses",
+        "slug": "mouses",
+        "imageUrl": "/products/categories/mouses.png"
+      },
+      {
+        "name": "Mousepads",
+        "slug": "mousepads",
+        "imageUrl": "/products/categories/mousepads.png"
+      },
+      {
+        "name": "Keyboards",
+        "slug": "keyboards",
+        "imageUrl": "/products/categories/keyboards.png"
+      },
+      {
+        "name": "Headphones",
+        "slug": "headphones",
+        "imageUrl": "/products/categories/headphones.png"
+      },
+      {
+        "name": "Speakers",
+        "slug": "speakers",
+        "imageUrl": "/products/categories/speakers.png"
+      },
+      {
+        "name": "Monitors",
+        "slug": "monitors",
+        "imageUrl": "/products/categories/monitors.png"
+      }
+    ],
+    
+      "mouses": [
+        {
+          "name": "Logitech MX Master 3s",
+          "slug": "logitech-mx-master-3s",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mouses/01_mx-master-3s.png",
+            "/products/mouses/02_mx-master-3s.png",
+            "/products/mouses/03_mx-master-3s.png",
+            "/products/mouses/04_mx-master-3s.png"
+          ],
+          "basePrice": 650,
+          "categoryId": 123,
+          "discountPercentage": 10
+        },
+        {
+          "name": "Logitech Pro X Superlight",
+          "slug": "logitech-pro-x-superlight",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mouses/01_logi-superlight.png",
+            "/products/mouses/02_logi-superlight.png",
+            "/products/mouses/03_logi-superlight.png",
+            "/products/mouses/04_logi-superlight.png"
+          ],
+          "basePrice": 750,
+          "categoryId": "mouseId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Logitech G305 Lightspeed",
+          "slug": "logitech-g305-lightspeed",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mouses/01_logi-lightspeed.png",
+            "/products/mouses/02_logi-lightspeed.png",
+            "/products/mouses/03_logi-lightspeed.png",
+            "/products/mouses/04_logi-lightspeed.png"
+          ],
+          "basePrice": 300,
+          "categoryId": "mouseId",
+          "discountPercentage": 15
+        },
+        {
+          "name": "Hyperx Pulsefire Dart",
+          "slug": "hyperx-pulsefire-dart",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mouses/01_hyperx-dart.png",
+            "/products/mouses/02_hyperx-dart.png",
+            "/products/mouses/03_hyperx-dart.png",
+            "/products/mouses/04_hyperx-dart.png"
+          ],
+          "basePrice": 600,
+          "categoryId": "mouseId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Razer Deathadder V2 Pro",
+          "slug": "razer-deathadder-v2-pro",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mouses/01_razer-deathadder.png",
+            "/products/mouses/02_razer-deathadder.png",
+            "/products/mouses/03_razer-deathadder.png",
+            "/products/mouses/04_razer-deathadder.png"
+          ],
+          "basePrice": 350,
+          "categoryId": "mouseId",
+          "discountPercentage": 0
+        }
+      ],
+      "mousepads": [
+        {
+          "name": "Logitech Powerplay",
+          "slug": "logitech-powerplay",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mousepads/01_logi-powerplay.png",
+            "/products/mousepads/02_logi-powerplay.png",
+            "/products/mousepads/03_logi-powerplay.png",
+            "/products/mousepads/04_logi-powerplay.png"
+          ],
+          "basePrice": 950,
+          "categoryId": "mousepadId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Logitech Desk Mat",
+          "slug": "logitech-desk-mat",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mousepads/01_logi-desk-mat.png",
+            "/products/mousepads/02_logi-desk-mat.png",
+            "/products/mousepads/03_logi-desk-mat.png",
+            "/products/mousepads/04_logi-desk-mat.png"
+          ],
+          "basePrice": 150,
+          "categoryId": "mousepadId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Logitech G740",
+          "slug": "logitech-g740",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mousepads/01_logi-g740.png",
+            "/products/mousepads/02_logi-g740.png",
+            "/products/mousepads/03_logi-g740.png",
+            "/products/mousepads/04_logi-g740.png"
+          ],
+          "basePrice": 200,
+          "categoryId": "mousepadId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Logitech Mousepad Studio Series",
+          "slug": "logitech-mousepad-studio-series",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mousepads/01_logi-studio-series.png",
+            "/products/mousepads/02_logi-studio-series.png",
+            "/products/mousepads/03_logi-studio-series.png",
+            "/products/mousepads/04_logi-studio-series.png"
+          ],
+          "basePrice": 250,
+          "categoryId": "mousepadId",
+          "discountPercentage": 15
+        },
+        {
+          "name": "Force One Skyhawk Dark",
+          "slug": "force-one-skyhawk-dark",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mousepads/01_force-dark.png",
+            "/products/mousepads/02_force-dark.png",
+            "/products/mousepads/03_force-dark.png",
+            "/products/mousepads/04_force-dark.png"
+          ],
+          "basePrice": 300,
+          "categoryId": "mousepadId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Force One Skyhawk Snow",
+          "slug": "force-one-skyhawk-snow",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/mousepads/01_force-snow.png",
+            "/products/mousepads/02_force-snow.png",
+            "/products/mousepads/03_force-snow.png",
+            "/products/mousepads/04_force-snow.png"
+          ],
+          "basePrice": 300,
+          "categoryId": "mousepadId",
+          "discountPercentage": 5
+        }
+      ],
+      "keyboards": [
+        {
+          "name": "Logitech MX Keys Mini",
+          "slug": "logitech-mx-keys-mini",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/keyboards/01_logi-mx-keys-mini.png",
+            "/products/keyboards/02_logi-mx-keys-mini.png",
+            "/products/keyboards/03_logi-mx-keys-mini.png",
+            "/products/keyboards/04_logi-mx-keys-mini.png"
+          ],
+          "basePrice": 650,
+          "categoryId": "tecladoId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Logitech MX Keys S",
+          "slug": "logitech-mx-keys-s",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/keyboards/01_logi-mx-keys-s.png",
+            "/products/keyboards/02_logi-mx-keys-s.png",
+            "/products/keyboards/03_logi-mx-keys-s.png",
+            "/products/keyboards/04_logi-mx-keys-s.png"
+          ],
+          "basePrice": 750,
+          "categoryId": "tecladoId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Logitech Pop Keys",
+          "slug": "logitech-pop-keys",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/keyboards/01_logi-pop-keys.png",
+            "/products/keyboards/02_logi-pop-keys.png",
+            "/products/keyboards/03_logi-pop-keys.png",
+            "/products/keyboards/04_logi-pop-keys.png"
+          ],
+          "basePrice": 440,
+          "categoryId": "tecladoId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Logitech MX Mechanical",
+          "slug": "logitech-mx-mechanical",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/keyboards/01_logi-mx-mechanical.png",
+            "/products/keyboards/02_logi-mx-mechanical.png",
+            "/products/keyboards/03_logi-mx-mechanical.png",
+            "/products/keyboards/04_logi-mx-mechanical.png"
+          ],
+          "basePrice": 700,
+          "categoryId": "tecladoId",
+          "discountPercentage": 15
+        },
+        {
+          "name": "Epomaker TH80",
+          "slug": "epomaker-th80",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/keyboards/01_epomaker-th80.png",
+            "/products/keyboards/02_epomaker-th80.png",
+            "/products/keyboards/03_epomaker-th80.png",
+            "/products/keyboards/04_epomaker-th80.png"
+          ],
+          "basePrice": 500,
+          "categoryId": "tecladoId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Redragon Gamer Ashe",
+          "slug": "redragon-gamer-ashe",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/keyboards/01_redragon-gamer-ashe.png",
+            "/products/keyboards/02_redragon-gamer-ashe.png",
+            "/products/keyboards/03_redragon-gamer-ashe.png",
+            "/products/keyboards/04_redragon-gamer-ashe.png"
+          ],
+          "basePrice": 400,
+          "categoryId": "tecladoId",
+          "discountPercentage": 25
+        }
+      ],
+      "headphones": [
+        {
+          "name": "Logitech Zone Vibe 100",
+          "slug": "logitech-zone-vibe-100",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/headphones/01_logi-vibe.png",
+            "/products/headphones/02_logi-vibe.png",
+            "/products/headphones/03_logi-vibe.png",
+            "/products/headphones/04_logi-vibe.png"
+          ],
+          "basePrice": 750,
+          "categoryId": "foneId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Logitech Pro X 2 Lightspeed",
+          "slug": "logitech-pro-x-2-lightspeed",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/headphones/01_logi-lightspeed-phone.png",
+            "/products/headphones/02_logi-lightspeed-phone.png",
+            "/products/headphones/03_logi-lightspeed-phone.png",
+            "/products/headphones/04_logi-lightspeed-phone.png"
+          ],
+          "basePrice": 1200,
+          "categoryId": "foneId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Logitech Astro A30",
+          "slug": "logitech-astro-a30",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/headphones/01_logi-astro-a30.png",
+            "/products/headphones/02_logi-astro-a30.png",
+            "/products/headphones/03_logi-astro-a30.png",
+            "/products/headphones/04_logi-astro-a30.png"
+          ],
+          "basePrice": 1500,
+          "categoryId": "foneId",
+          "discountPercentage": 15
+        },
+        {
+          "name": "Logitech Zone Wired Earbuds",
+          "slug": "logitech-zone-wired-earbuds",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/headphones/01_logi-earbuds.png",
+            "/products/headphones/02_logi-earbuds.png",
+            "/products/headphones/03_logi-earbuds.png",
+            "/products/headphones/04_logi-earbuds.png"
+          ],
+          "basePrice": 550,
+          "categoryId": "foneId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Hyperx Cloud Stinger 2",
+          "slug": "hyperx-cloud-stinger-2",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/headphones/01_hyperx-stinger.png",
+            "/products/headphones/02_hyperx-stinger.png",
+            "/products/headphones/03_hyperx-stinger.png",
+            "/products/headphones/04_hyperx-stinger.png"
+          ],
+          "basePrice": 250,
+          "categoryId": "foneId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Razer Kraken X",
+          "slug": "razer-kraken-x",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/headphones/01_razer-kraken.png",
+            "/products/headphones/02_razer-kraken.png",
+            "/products/headphones/03_razer-kraken.png",
+            "/products/headphones/04_razer-kraken.png"
+          ],
+          "basePrice": 200,
+          "categoryId": "foneId",
+          "discountPercentage": 0
+        }
+      ],
+      "monitors": [
+        {
+          "name": "Dell S2421HN",
+          "slug": "dell-s2421hn",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/monitors/01_dell-S2421HN.png",
+            "/products/monitors/02_dell-S2421HN.png",
+            "/products/monitors/03_dell-S2421HN.png",
+            "/products/monitors/04_dell-S2421HN.png"
+          ],
+          "basePrice": 1500,
+          "categoryId": "monitorId",
+          "discountPercentage": 15
+        },
+        {
+          "name": "Dell P2422H",
+          "slug": "dell-p2422h",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/monitors/01_dell-P2422H.png",
+            "/products/monitors/02_dell-P2422H.png",
+            "/products/monitors/03_dell-P2422H.png",
+            "/products/monitors/04_dell-P2422H.png"
+          ],
+          "basePrice": 2000,
+          "categoryId": "monitorId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Dell P2723QE",
+          "slug": "dell-p2723qe",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/monitors/01_dell-P2723QE.png",
+            "/products/monitors/02_dell-P2723QE.png",
+            "/products/monitors/03_dell-P2723QE.png",
+            "/products/monitors/04_dell-P2723QE.png"
+          ],
+          "basePrice": 2500,
+          "categoryId": "monitorId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Dell S3422DWG",
+          "slug": "dell-s3422dwg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/monitors/01_dell-S3422DWG.png",
+            "/products/monitors/02_dell-S3422DWG.png",
+            "/products/monitors/03_dell-S3422DWG.png",
+            "/products/monitors/04_dell-S3422DWG.png"
+          ],
+          "basePrice": 3200,
+          "categoryId": "monitorId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Dell S3222DGM",
+          "slug": "dell-s3222dgm",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/monitors/01_dell-S3222DGM.png",
+            "/products/monitors/02_dell-S3222DGM.png",
+            "/products/monitors/03_dell-S3222DGM.png",
+            "/products/monitors/04_dell-S3222DGM.png"
+          ],
+          "basePrice": 3500,
+          "categoryId": "monitorId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Dell AW2524HF",
+          "slug": "dell-aw2524hf",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/monitors/01_dell-AW2524HF.png",
+            "/products/monitors/02_dell-AW2524HF.png",
+            "/products/monitors/03_dell-AW2524HF.png",
+            "/products/monitors/04_dell-AW2524HF.png"
+          ],
+          "basePrice": 4200,
+          "categoryId": "monitorId",
+          "discountPercentage": 10
+        }
+      ],
+      "speakers": [
+        {
+          "name": "Logitech Surround Sound Z607",
+          "slug": "logitech-surround-sound-z607",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/speakers/01_logi-surround-z607.png",
+            "/products/speakers/02_logi-surround-z607.png",
+            "/products/speakers/03_logi-surround-z607.png",
+            "/products/speakers/04_logi-surround-z607.png"
+          ],
+          "basePrice": 1200,
+          "categoryId": "speakId",
+          "discountPercentage": 5
+        },
+        {
+          "name": "Logitech Dock",
+          "slug": "logitech-dock",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/speakers/01_logi-dock.png",
+            "/products/speakers/02_logi-dock.png",
+            "/products/speakers/03_logi-dock.png",
+            "/products/speakers/04_logi-dock.png"
+          ],
+          "basePrice": 4500,
+          "categoryId": "speakId",
+          "discountPercentage": 15
+        },
+        {
+          "name": "Sony SA-Z9R Speakers",
+          "slug": "sony-sa-z9r-speakers",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/speakers/01_sony-SA-Z9R.png",
+            "/products/speakers/02_sony-SA-Z9R.png",
+            "/products/speakers/03_sony-SA-Z9R.png",
+            "/products/speakers/04_sony-SA-Z9R.png"
+          ],
+          "basePrice": 4000,
+          "categoryId": "speakId",
+          "discountPercentage": 10
+        },
+        {
+          "name": "Sony XB43 Extra Bass",
+          "slug": "sony-xb43-extra-bass",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/speakers/01_sony-extra-bass.png",
+            "/products/speakers/02_sony-extra-bass.png",
+            "/products/speakers/03_sony-extra-bass.png",
+            "/products/speakers/04_sony-extra-bass.png"
+          ],
+          "basePrice": 3200,
+          "categoryId": "speakId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Sony XB23 Extra Bass",
+          "slug": "sony-xb23-extra-bass",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/speakers/01_sony-XB23.png",
+            "/products/speakers/02_sony-XB23.png",
+            "/products/speakers/03_sony-XB23.png",
+            "/products/speakers/04_sony-XB23.png"
+          ],
+          "basePrice": 3500,
+          "categoryId": "speakId",
+          "discountPercentage": 0
+        },
+        {
+          "name": "Sony HT-S200F Soundbar",
+          "slug": "sony-ht-s200f-soundbar",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id malesuada elit, eget vulputate justo. Sed sollicitudin velit dolor, ut gravida odio iaculis a.\nNulla risus justo, tempor eu felis eu, efficitur pulvinar risus. Sed viverra, nisi id egestas convallis, massa lorem convallis magna, vel convallis mi turpis nec ante. Maecenas posuere lacus id gravida dignissim. Morbi sit amet rutrum ex. Duis sit amet sem orci. Morbi non nisl sed mauris mattis ullamcorper quis eget metus.\nUt pellentesque ornare erat, vitae blandit ex pulvinar sit amet. Ut pellentesque lorem at eros vestibulum lobortis. Proin bibendum est facilisis nulla tristique vestibulum. Etiam placerat tortor sit amet lacinia volutpat. Curabitur lectus turpis, faucibus vitae tortor in, lacinia tristique neque.",
+          "imageUrls": [
+            "/products/speakers/01_sony-S200F.png",
+            "/products/speakers/02_sony-S200F.png",
+            "/products/speakers/03_sony-S200F.png",
+            "/products/speakers/04_sony-S200F.png"
+          ],
+          "basePrice": 2500,
+          "categoryId": "speakId",
+          "discountPercentage": 0
+        }
+      ]
+    
+  }
+  
