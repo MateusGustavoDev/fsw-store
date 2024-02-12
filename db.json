@@ -11,12 +11,12 @@
       "imageUrl": "/products/categories/mousepads.png"
     },
     {
-      "name": "Keyboards",
+      "name": "Teclados",
       "slug": "keyboards",
       "imageUrl": "/products/categories/keyboards.png"
     },
     {
-      "name": "Headphones",
+      "name": "Fones",
       "slug": "headphones",
       "imageUrl": "/products/categories/headphones.png"
     },
@@ -26,7 +26,7 @@
       "imageUrl": "/products/categories/speakers.png"
     },
     {
-      "name": "Monitors",
+      "name": "Monitores",
       "slug": "monitors",
       "imageUrl": "/products/categories/monitors.png"
     }

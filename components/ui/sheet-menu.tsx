@@ -60,7 +60,7 @@ export function SheetMenu() {
             <Button
               onClick={handleLoginClick}
               variant="outline"
-              className="flex w-full font-poppins rounded justify-start gap-2"
+              className="flex w-full font-poppins rounded-md justify-start gap-2"
             >
               <LogInIcon size={16} />
               Fazer login
@@ -70,7 +70,7 @@ export function SheetMenu() {
             <Button
               onClick={handleLogoutClick}
               variant="outline"
-              className="flex w-full font-poppins rounded justify-start gap-2"
+              className="flex w-full font-poppins rounded-md justify-start gap-2"
             >
               <LogOutIcon size={16} />
               Fazer logout
@@ -80,7 +80,7 @@ export function SheetMenu() {
             <Link href="/">
               <Button
                 variant="outline"
-                className="flex w-full font-poppins rounded justify-start gap-2"
+                className="flex w-full font-poppins rounded-md justify-start gap-2"
               >
                 <HomeIcon size={16} />
                 Início
@@ -89,7 +89,7 @@ export function SheetMenu() {
           </SheetClose>
           <Button
             variant="outline"
-            className="flex w-full font-poppins rounded justify-start gap-2"
+            className="flex w-full font-poppins rounded-md justify-start gap-2"
           >
             <PercentIcon size={16} />
             Fazer login
@@ -98,7 +98,7 @@ export function SheetMenu() {
             <Link href="/catalog">
               <Button
                 variant="outline"
-                className="flex w-full font-poppins rounded justify-start gap-2"
+                className="flex w-full font-poppins rounded-md justify-start gap-2"
               >
                 <ListOrderedIcon size={16} />
                 Catálogo

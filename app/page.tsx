@@ -5,7 +5,7 @@ import { ProductList } from "@/components/ui/product-list";
 import { SectionTitle } from "@/components/ui/section-title";
 import { useProductsByCategory } from "@/hooks/get-products-by-category";
 
-export default function Home() {
+export default function HomePage() {
   const { data: mouses } = useProductsByCategory("mouses");
   const { data: keyboards } = useProductsByCategory("keyboards");
   const { data: headphones } = useProductsByCategory("headphones");
