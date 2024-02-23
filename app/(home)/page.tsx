@@ -3,7 +3,7 @@ import Categories from "@/components/ui/categories";
 import { ProductBanner } from "@/components/ui/product-banner";
 import { ProductList } from "@/components/ui/product-list";
 import { SectionTitle } from "@/components/ui/section-title";
-import { useProductsByCategory } from "@/hooks/get-products-by-category";
+import { useProductsByCategory } from "@/hooks/use-products-by-category";
 
 export default function HomePage() {
   const { data: mouses } = useProductsByCategory("mouses");

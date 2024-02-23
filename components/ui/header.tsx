@@ -10,7 +10,7 @@ export function Header() {
       <SheetMenu />
       <Link href="/">
         <h1 className="font-poppins text-lg font-semibold text-white">
-          <span className="font-semi text-lg text-violet">FSW</span> Store
+          <span className="font-semi text-lg text-dark-purple">FSW</span> Store
         </h1>
       </Link>
       <Button variant="outline" className="border border-border rounded-lg p-2">

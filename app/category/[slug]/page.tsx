@@ -2,8 +2,8 @@
 import { BadgeCategory } from "@/components/ui/badge-category";
 import ProductItem from "@/components/ui/product-item";
 import { CategoryName } from "@/helpers/category-name";
-import { computeProductTotalPrice } from "@/helpers/product";
-import { useProductsByCategory } from "@/hooks/get-products-by-category";
+import { computeProductTotalPrice } from "@/utils/compute-total-price";
+import { useProductsByCategory } from "@/hooks/use-products-by-category";
 import {
   HeadphonesIcon,
   KeyboardIcon,
@@ -12,7 +12,6 @@ import {
   SpeakerIcon,
   SquareIcon,
 } from "lucide-react";
-import { Pragati_Narrow } from "next/font/google";
 
 export default function CategoryPage({ params }: any) {
   const { data } = useProductsByCategory(params.slug);

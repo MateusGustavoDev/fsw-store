@@ -1,5 +1,5 @@
 "use client";
-import { useCategories } from "@/hooks/get-categories";
+import { useCategories } from "@/hooks/use-categories";
 import { ShapesIcon } from "lucide-react";
 import CategoryItem from "./components/category-item";
 import { BadgeCategory } from "@/components/ui/badge-category";

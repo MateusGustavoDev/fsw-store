@@ -21,7 +21,7 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
             style={{ objectFit: "contain" }}
           />
         </div>
-        <div className="rounded-bl-lg rounded-br-lg bg-accent py-2">
+        <div className="rounded-bl-lg rounded-br-lg bg-black-01 py-2">
           <p className="text-sm text-center font-semibold">{category.name}</p>
         </div>
       </div>

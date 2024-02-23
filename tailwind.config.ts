@@ -23,7 +23,11 @@ const config = {
           "linear-gradient(45deg, #5033C3 0%, rgba(80, 51, 195, 0.20) 100%)",
       },
       colors: {
-        violet: "#5033C3",
+        "black-01": "var(--black-01)",
+        "dark-purple": "var(--dark-purple)",
+        "light-purple": "var(--light-purple)",
+        "base-gray": "var(--base-gray)",
+        "light-gray": "var(--light-gray)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
