@@ -1,14 +1,14 @@
-"use client";
-import Categories from "@/components/ui/categories";
-import { ProductBanner } from "./components/product-banner";
-import { ProductList } from "@/components/ui/product-list";
-import { SectionTitle } from "@/components/ui/section-title";
-import { useProductsByCategory } from "@/hooks/use-products-by-category";
+'use client'
+import Categories from '@/components/ui/categories'
+import { ProductBanner } from './components/product-banner'
+import { ProductList } from '@/components/ui/product-list'
+import { SectionTitle } from '@/components/ui/section-title'
+import { useProductsByCategory } from '@/hooks/use-products-by-category'
 
 export default function HomePage() {
-  const { data: mouses } = useProductsByCategory("mouses");
-  const { data: keyboards } = useProductsByCategory("keyboards");
-  const { data: headphones } = useProductsByCategory("headphones");
+  const { data: mouses } = useProductsByCategory('mouses')
+  const { data: keyboards } = useProductsByCategory('keyboards')
+  const { data: headphones } = useProductsByCategory('headphones')
 
   return (
     <>
@@ -32,5 +32,5 @@ export default function HomePage() {
       <SectionTitle>fones</SectionTitle>
       {headphones && <ProductList products={headphones} />}
     </>
-  );
+  )
 }

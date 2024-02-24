@@ -1,10 +1,10 @@
-import { formateToBrl } from "@/utils/formate-to-brl";
-import { Separator } from "./separator";
+import { formateToBrl } from '@/utils/formate-to-brl'
+import { Separator } from './separator'
 
 interface CartResumeProps {
-  subtotal: number;
-  descontos: number;
-  total: number;
+  subtotal: number
+  descontos: number
+  total: number
 }
 
 export function CartResume({ subtotal, descontos, total }: CartResumeProps) {
@@ -32,5 +32,5 @@ export function CartResume({ subtotal, descontos, total }: CartResumeProps) {
         <span className="font-bold">{formateToBrl(total)}</span>
       </div>
     </div>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-"use client";
-import { BadgeCategory } from "@/components/ui/badge-category";
-import ProductItem from "@/components/ui/product-item";
-import { CategoryName } from "@/helpers/category-name";
-import { computeProductTotalPrice } from "@/utils/compute-total-price";
-import { useProductsByCategory } from "@/hooks/use-products-by-category";
+'use client'
+import { BadgeCategory } from '@/components/ui/badge-category'
+import ProductItem from '@/components/ui/product-item'
+import { CategoryName } from '@/helpers/category-name'
+import { computeProductTotalPrice } from '@/utils/compute-total-price'
+import { useProductsByCategory } from '@/hooks/use-products-by-category'
 import {
   HeadphonesIcon,
   KeyboardIcon,
@@ -11,10 +11,10 @@ import {
   MouseIcon,
   SpeakerIcon,
   SquareIcon,
-} from "lucide-react";
+} from 'lucide-react'
 
 export default function CategoryPage({ params }: any) {
-  const { data } = useProductsByCategory(params.slug);
+  const { data } = useProductsByCategory(params.slug)
 
   const categoryIcons = {
     keyboards: <KeyboardIcon size={16} />,
@@ -23,7 +23,7 @@ export default function CategoryPage({ params }: any) {
     mousepads: <SquareIcon size={16} />,
     speakers: <SpeakerIcon size={16} />,
     mouses: <MouseIcon size={16} />,
-  };
+  }
 
   return (
     <div className="px-5 w-full">
@@ -42,5 +42,5 @@ export default function CategoryPage({ params }: any) {
         ))}
       </div>
     </div>
-  );
+  )
 }

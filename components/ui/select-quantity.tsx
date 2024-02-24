@@ -1,10 +1,10 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "./button";
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Button } from './button'
 
 interface SelectQuantityProps {
-  quantity: number;
-  handleDecreaseQuantityClick: () => void;
-  handleIncreaseQuantityClick: () => void;
+  quantity: number
+  handleDecreaseQuantityClick: () => void
+  handleIncreaseQuantityClick: () => void
 }
 
 export function SelectQuantity({
@@ -22,9 +22,7 @@ export function SelectQuantity({
       >
         <ChevronLeft />
       </Button>
-      <div className="w-8 h-8 flex items-center justify-center">
-        {quantity}
-      </div>
+      <div className="w-8 h-8 flex items-center justify-center">{quantity}</div>
       <Button
         size="icon"
         variant="outline"
@@ -34,5 +32,5 @@ export function SelectQuantity({
         <ChevronRight />
       </Button>
     </div>
-  );
+  )
 }

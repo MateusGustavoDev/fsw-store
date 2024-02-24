@@ -1,14 +1,14 @@
-"use client";
-import Image from "next/image";
-import { useState } from "react";
+'use client'
+import Image from 'next/image'
+import { useState } from 'react'
 
 interface ProductImagesProps {
-  name: string;
-  imagesUrls: string[];
+  name: string
+  imagesUrls: string[]
 }
 
 const ProductImages = ({ imagesUrls, name }: ProductImagesProps) => {
-  const [selectedImage, setSelectedImage] = useState(imagesUrls[0]);
+  const [selectedImage, setSelectedImage] = useState(imagesUrls[0])
 
   return (
     <div>
@@ -30,8 +30,8 @@ const ProductImages = ({ imagesUrls, name }: ProductImagesProps) => {
               key={image}
               className={`w-20 bg-bl h-20 border rounded-lg ${
                 image === selectedImage
-                  ? "border-light-purple"
-                  : "border-transparent"
+                  ? 'border-light-purple'
+                  : 'border-transparent'
               } bg-black-01 items-center justify-center border flex`}
             >
               <Image
@@ -47,7 +47,7 @@ const ProductImages = ({ imagesUrls, name }: ProductImagesProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductImages;
+export default ProductImages

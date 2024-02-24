@@ -5,5 +5,5 @@ export const Footer = () => {
         © 2023 Copyright <span className="font-semibold">FSW Store</span>
       </span>
     </div>
-  );
-};
+  )
+}

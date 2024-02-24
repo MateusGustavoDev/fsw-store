@@ -1,33 +1,33 @@
-"use client";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { SelectQuantity } from "@/components/ui/select-quantity";
-import { StarsRating } from "@/components/ui/stars-rating";
-import { CartContext } from "@/context/cart";
-import { productWithTotalPrice } from "@/utils/compute-total-price";
-import { formateToBrl } from "@/utils/formate-to-brl";
-import { ArrowDownIcon, TruckIcon } from "lucide-react";
-import { useContext, useState } from "react";
+'use client'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
+import { SelectQuantity } from '@/components/ui/select-quantity'
+import { StarsRating } from '@/components/ui/stars-rating'
+import { CartContext } from '@/context/cart'
+import { productWithTotalPrice } from '@/utils/compute-total-price'
+import { formateToBrl } from '@/utils/formate-to-brl'
+import { ArrowDownIcon, TruckIcon } from 'lucide-react'
+import { useContext, useState } from 'react'
 
 interface ProductInfoProps {
-  product: productWithTotalPrice;
+  product: productWithTotalPrice
 }
 
 const ProductInfo = ({ product }: ProductInfoProps) => {
-  const [quantity, setQuantity] = useState(1);
-  const { addProductToCart } = useContext(CartContext);
+  const [quantity, setQuantity] = useState(1)
+  const { addProductToCart } = useContext(CartContext)
 
   const handleDecreaseQuantityClick = () => {
-    setQuantity((prev) => (prev === 1 ? prev : prev - 1));
-  };
+    setQuantity((prev) => (prev === 1 ? prev : prev - 1))
+  }
 
   const handleIncreaseQuantityClick = () => {
-    setQuantity((prev) => prev + 1);
-  };
+    setQuantity((prev) => prev + 1)
+  }
 
   const handleToCartProductClick = () => {
-    addProductToCart({ ...product, quantity });
-  };
+    addProductToCart({ ...product, quantity })
+  }
 
   return (
     <div className="flex flex-col px-5">
@@ -61,7 +61,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
                 </Badge>
               </div>
               <span className="font-light text-sm font-poppins text-base-gray">
-                De:{" "}
+                De:{' '}
                 <span className="line-through">
                   {formateToBrl(Number(product.basePrice))}
                 </span>
@@ -109,7 +109,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductInfo;
+export default ProductInfo

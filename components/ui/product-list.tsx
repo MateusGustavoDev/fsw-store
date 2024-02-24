@@ -1,9 +1,9 @@
-import ProductItem from "@/components/ui/product-item";
-import { computeProductTotalPrice } from "@/utils/compute-total-price";
-import { Product } from "@/types/product";
+import ProductItem from '@/components/ui/product-item'
+import { computeProductTotalPrice } from '@/utils/compute-total-price'
+import { Product } from '@/types/product'
 
 interface ProductListProps {
-  products: Product[];
+  products: Product[]
 }
 
 export const ProductList = ({ products }: ProductListProps) => {
@@ -16,5 +16,5 @@ export const ProductList = ({ products }: ProductListProps) => {
         />
       ))}
     </div>
-  );
-};
+  )
+}

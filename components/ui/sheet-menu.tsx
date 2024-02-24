@@ -1,34 +1,34 @@
-"use client";
-import { signIn, signOut, useSession } from "next-auth/react";
+'use client'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetHeader,
   SheetTrigger,
-} from "./sheet";
-import Link from "next/link";
-import { Button } from "./button";
+} from './sheet'
+import Link from 'next/link'
+import { Button } from './button'
 import {
   AlignJustify,
   HomeIcon,
   ListOrderedIcon,
   LogInIcon,
   LogOutIcon,
-} from "lucide-react";
-import { Separator } from "./separator";
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
+} from 'lucide-react'
+import { Separator } from './separator'
+import { Avatar, AvatarFallback, AvatarImage } from './avatar'
 
 export function SheetMenu() {
-  const { status, data } = useSession();
+  const { status, data } = useSession()
 
   const handleLoginClick = async () => {
-    await signIn();
-  };
+    await signIn()
+  }
 
   const handleLogoutClick = async () => {
-    await signOut();
-  };
+    await signOut()
+  }
   return (
     <Sheet>
       <SheetTrigger>
@@ -43,7 +43,7 @@ export function SheetMenu() {
         <SheetHeader className="font-lg font-poppins text-left font-semibold">
           Menu
         </SheetHeader>
-        {status === "authenticated" && data?.user && (
+        {status === 'authenticated' && data?.user && (
           <div className="flex flex-col">
             <div className="flex items-center gap-3 py-4">
               <Avatar>
@@ -60,7 +60,7 @@ export function SheetMenu() {
           </div>
         )}
         <div className="mt-2 flex flex-col gap-2">
-          {status === "unauthenticated" && (
+          {status === 'unauthenticated' && (
             <Button
               onClick={handleLoginClick}
               variant="outline"
@@ -70,7 +70,7 @@ export function SheetMenu() {
               Fazer login
             </Button>
           )}
-          {status === "authenticated" && (
+          {status === 'authenticated' && (
             <Button
               onClick={handleLogoutClick}
               variant="outline"
@@ -105,5 +105,5 @@ export function SheetMenu() {
         </div>
       </SheetContent>
     </Sheet>
-  );
+  )
 }

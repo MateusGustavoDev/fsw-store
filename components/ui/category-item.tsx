@@ -1,6 +1,6 @@
-"use client";
-import { Badge } from "@/components/ui/badge";
-import { Category } from "@/types/category";
+'use client'
+import { Badge } from '@/components/ui/badge'
+import { Category } from '@/types/category'
 import {
   HeadphonesIcon,
   KeyboardIcon,
@@ -8,11 +8,11 @@ import {
   MouseIcon,
   SpeakerIcon,
   SquareIcon,
-} from "lucide-react";
-import Link from "next/link";
+} from 'lucide-react'
+import Link from 'next/link'
 
 interface CategoryItemProps {
-  category: Category;
+  category: Category
 }
 
 const CategoryItem = ({ category }: CategoryItemProps) => {
@@ -23,7 +23,7 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
     mousepads: <SquareIcon size={16} />,
     speakers: <SpeakerIcon size={16} />,
     mouses: <MouseIcon size={16} />,
-  };
+  }
 
   return (
     <Link href={`/category/${category.slug}`}>
@@ -35,7 +35,7 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
         <span className="text-xs font-semibold">{category.name}</span>
       </Badge>
     </Link>
-  );
-};
+  )
+}
 
-export default CategoryItem;
+export default CategoryItem

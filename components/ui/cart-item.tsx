@@ -1,28 +1,28 @@
-"use client";
-import { formateToBrl } from "@/utils/formate-to-brl";
-import Image from "next/image";
-import { Button } from "./button";
-import { Trash } from "lucide-react";
-import { SelectQuantity } from "./select-quantity";
-import { CartContext, CartProduct } from "@/context/cart";
-import { useContext, useState } from "react";
+'use client'
+import { formateToBrl } from '@/utils/formate-to-brl'
+import Image from 'next/image'
+import { Button } from './button'
+import { Trash } from 'lucide-react'
+import { SelectQuantity } from './select-quantity'
+import { CartContext, CartProduct } from '@/context/cart'
+import { useContext, useState } from 'react'
 
 interface CartItemProps {
-  product: CartProduct;
+  product: CartProduct
 }
 
 export function CartItem({ product }: CartItemProps) {
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(1)
 
-  const { removeProductFromCart } = useContext(CartContext);
+  const { removeProductFromCart } = useContext(CartContext)
 
   const handleDecreaseQuantityClick = () => {
-    setQuantity((prev) => (prev === 1 ? prev : prev - 1));
-  };
+    setQuantity((prev) => (prev === 1 ? prev : prev - 1))
+  }
 
   const handleIncreaseQuantityClick = () => {
-    setQuantity((prev) => prev + 1);
-  };
+    setQuantity((prev) => prev + 1)
+  }
 
   return (
     <div className="flex">
@@ -33,7 +33,7 @@ export function CartItem({ product }: CartItemProps) {
           height={0}
           sizes="100vw"
           className="h-[70%] w-auto"
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: 'contain' }}
           alt={product.name}
         />
       </div>
@@ -75,5 +75,5 @@ export function CartItem({ product }: CartItemProps) {
         />
       </div>
     </div>
-  );
+  )
 }

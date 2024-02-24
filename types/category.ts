@@ -1,5 +1,5 @@
 export type Category = {
-  name: string;
-  slug: string;
-  imageUrl: string;
-};
+  name: string
+  slug: string
+  imageUrl: string
+}

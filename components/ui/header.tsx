@@ -1,9 +1,9 @@
-"use client";
-import { ShoppingCart } from "lucide-react";
-import { Button } from "./button";
-import { SheetMenu } from "./sheet-menu";
-import Link from "next/link";
-import { Cart } from "./cart";
+'use client'
+import { ShoppingCart } from 'lucide-react'
+import { Button } from './button'
+import { SheetMenu } from './sheet-menu'
+import Link from 'next/link'
+import { Cart } from './cart'
 
 export function Header() {
   return (
@@ -16,5 +16,5 @@ export function Header() {
       </Link>
       <Cart />
     </div>
-  );
+  )
 }

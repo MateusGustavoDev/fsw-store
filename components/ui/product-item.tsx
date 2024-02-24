@@ -1,13 +1,13 @@
-import { productWithTotalPrice } from "@/utils/compute-total-price";
-import { ArrowDownIcon } from "lucide-react";
-import Image from "next/image";
-import { Badge } from "./badge";
-import Link from "next/link";
-import { formateToBrl } from "@/utils/formate-to-brl";
-import { StarsRating } from "./stars-rating";
+import { productWithTotalPrice } from '@/utils/compute-total-price'
+import { ArrowDownIcon } from 'lucide-react'
+import Image from 'next/image'
+import { Badge } from './badge'
+import Link from 'next/link'
+import { formateToBrl } from '@/utils/formate-to-brl'
+import { StarsRating } from './stars-rating'
 
 interface ProductItemProps {
-  product: productWithTotalPrice;
+  product: productWithTotalPrice
 }
 
 const ProductItem = ({ product }: ProductItemProps) => {
@@ -21,7 +21,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
             height={0}
             sizes="100vw"
             className="h-[5.625rem] w-auto"
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: 'contain' }}
             alt={product.name}
           />
           {product.discountPercentage > 0 && (
@@ -58,7 +58,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
         <span className="text-light text-xs text-light-gray">(25)</span>
       </div>
     </Link>
-  );
-};
+  )
+}
 
-export default ProductItem;
+export default ProductItem

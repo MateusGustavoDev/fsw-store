@@ -1,17 +1,17 @@
-"use client";
-import { ShoppingCart } from "lucide-react";
-import { Button } from "./button";
-import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./sheet";
-import { BadgeCategory } from "./badge-category";
-import { useContext } from "react";
-import { CartContext } from "@/context/cart";
-import { CartItem } from "./cart-item";
-import { ScrollArea } from "./scroll-area";
-import { CartResume } from "./cart-resume";
+'use client'
+import { ShoppingCart } from 'lucide-react'
+import { Button } from './button'
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from './sheet'
+import { BadgeCategory } from './badge-category'
+import { useContext } from 'react'
+import { CartContext } from '@/context/cart'
+import { CartItem } from './cart-item'
+import { ScrollArea } from './scroll-area'
+import { CartResume } from './cart-resume'
 
 export function Cart() {
   const { products, cartTotalPrice, cartTotalDiscount, subtotal } =
-    useContext(CartContext);
+    useContext(CartContext)
 
   return (
     <Sheet>
@@ -51,5 +51,5 @@ export function Cart() {
         </div>
       </SheetContent>
     </Sheet>
-  );
+  )
 }

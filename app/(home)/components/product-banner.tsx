@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 interface ProductBannerProps {
-  imageUrl: string;
-  alt: string;
+  imageUrl: string
+  alt: string
 }
 
 export function ProductBanner({ imageUrl, alt }: ProductBannerProps) {
@@ -17,5 +17,5 @@ export function ProductBanner({ imageUrl, alt }: ProductBannerProps) {
         sizes="100vw"
       />
     </div>
-  );
+  )
 }
