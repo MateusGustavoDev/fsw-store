@@ -27,10 +27,12 @@ export default function CategoryPage({ params }: any) {
 
   return (
     <div className="px-5 w-full">
-      <BadgeCategory>
-        {categoryIcons[params.slug as keyof typeof categoryIcons]}
-        {CategoryName[params.slug as keyof typeof CategoryName]}
-      </BadgeCategory>
+      <div className="my-8">
+        <BadgeCategory>
+          {categoryIcons[params.slug as keyof typeof categoryIcons]}
+          {CategoryName[params.slug as keyof typeof CategoryName]}
+        </BadgeCategory>
+      </div>
       <div className="flex flex-wrap gap-8 justify-center">
         {data?.map((product) => (
           <ProductItem

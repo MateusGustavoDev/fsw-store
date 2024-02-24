@@ -9,10 +9,12 @@ export default function CatalogPage() {
 
   return (
     <div className="px-5">
-      <BadgeCategory>
-        <ShapesIcon />
-        Catálogo
-      </BadgeCategory>
+      <div className="my-8">
+        <BadgeCategory>
+          <ShapesIcon />
+          Catálogo
+        </BadgeCategory>
+      </div>
       <div className="grid grid-cols-2 gap-8">
         {categories?.map((category) => (
           <CategoryItem key={category.slug} category={category} />

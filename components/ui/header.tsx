@@ -3,6 +3,7 @@ import { ShoppingCart } from "lucide-react";
 import { Button } from "./button";
 import { SheetMenu } from "./sheet-menu";
 import Link from "next/link";
+import { Cart } from "./cart";
 
 export function Header() {
   return (
@@ -13,9 +14,7 @@ export function Header() {
           <span className="font-semi text-lg text-dark-purple">FSW</span> Store
         </h1>
       </Link>
-      <Button variant="outline" className="border border-border rounded-lg p-2">
-        <ShoppingCart size={22} />
-      </Button>
+      <Cart />
     </div>
   );
 }

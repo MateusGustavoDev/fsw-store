@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { signIn, signOut, useSession } from "next-auth/react";
 import {
   Sheet,
@@ -15,7 +15,6 @@ import {
   ListOrderedIcon,
   LogInIcon,
   LogOutIcon,
-  PercentIcon,
 } from "lucide-react";
 import { Separator } from "./separator";
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
@@ -33,7 +32,10 @@ export function SheetMenu() {
   return (
     <Sheet>
       <SheetTrigger>
-        <Button variant="outline" className="border border-border rounded-lg p-2">
+        <Button
+          variant="outline"
+          className="border border-border rounded-lg w-10 h-10 p-0"
+        >
           <AlignJustify size={22} />
         </Button>
       </SheetTrigger>
@@ -50,7 +52,9 @@ export function SheetMenu() {
                 </AvatarFallback>
                 {data.user.image && <AvatarImage src={data.user.image} />}
               </Avatar>
-              <p className="font-medium font-poppins">{data?.user?.name}</p>
+              <span className="font-medium font-poppins">
+                {data?.user?.name}
+              </span>
             </div>
             <Separator className="my-2" />
           </div>
@@ -87,13 +91,6 @@ export function SheetMenu() {
               </Button>
             </Link>
           </SheetClose>
-          <Button
-            variant="outline"
-            className="flex w-full font-poppins rounded-md justify-start gap-2"
-          >
-            <PercentIcon size={16} />
-            Fazer login
-          </Button>
           <SheetClose asChild>
             <Link href="/catalog">
               <Button

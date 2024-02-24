@@ -1,8 +1,9 @@
 "use client";
-import { type productWithTotalPrice } from "@/helpers/product";
-import { type ReactNode, createContext, useMemo, useState } from "react";
 
-export interface CartProduct extends productWithTotalPrice {
+import { ProductWithTotalPrice } from "@/types/product";
+import { ReactNode, createContext, useEffect, useMemo, useState } from "react";
+
+export interface CartProduct extends ProductWithTotalPrice {
   quantity: number;
 }
 
@@ -12,51 +13,70 @@ interface ICartContext {
   cartBasePrice: number;
   cartTotalDiscount: number;
   total: number;
-  subTotal: number;
+  subtotal: number;
   totalDiscount: number;
   addProductToCart: (product: CartProduct) => void;
   decreaseProductQuantity: (productId: string) => void;
   increaseProductQuantity: (productId: string) => void;
-  removeProductCart: (productId: string) => void;
+  removeProductFromCart: (productId: string, categoryId: string) => void;
 }
 
-export const cartContext = createContext<ICartContext>({
+export const CartContext = createContext<ICartContext>({
   products: [],
   cartTotalPrice: 0,
   cartBasePrice: 0,
   cartTotalDiscount: 0,
   total: 0,
+  subtotal: 0,
   totalDiscount: 0,
-  subTotal: 0,
   addProductToCart: () => {},
   decreaseProductQuantity: () => {},
   increaseProductQuantity: () => {},
-  removeProductCart: () => {},
+  removeProductFromCart: () => {},
 });
 
 const CartProvider = ({ children }: { children: ReactNode }) => {
   const [products, setProducts] = useState<CartProduct[]>([]);
 
-  const subTotal = useMemo(() => {
+  useEffect(() => {
+    console.log(products);
+  }, [products]);
+
+  useEffect(() => {
+    setProducts(
+      JSON.parse(localStorage.getItem("@fsw-store/cart-products") || "[]")
+    );
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("@fsw-store/cart-products", JSON.stringify(products));
+  }, [products]);
+
+  // Total sem descontos
+  const subtotal = useMemo(() => {
     return products.reduce((acc, product) => {
       return acc + Number(product.basePrice) * product.quantity;
     }, 0);
   }, [products]);
 
+  // Total com descontos
   const total = useMemo(() => {
     return products.reduce((acc, product) => {
-      return acc + Number(product.totalPrice) * product.quantity;
+      return acc + product.totalPrice * product.quantity;
     }, 0);
   }, [products]);
 
-  const totalDiscount = total - subTotal;
+  const totalDiscount = subtotal - total;
 
   const addProductToCart = (product: CartProduct) => {
-    const productAlreadyOnCart = products.some(
-      (cartProduct) => cartProduct.id === product.id
+    const productIsAlreadyOnCart = products.some(
+      (cartProduct) =>
+        cartProduct.id === product.id &&
+        cartProduct.categoryId === product.categoryId
     );
 
-    if (productAlreadyOnCart) {
+    if (productIsAlreadyOnCart) {
+      console.log("if (productIsAlreadyOnCart) - True");
       setProducts((prev) =>
         prev.map((cartProduct) => {
           if (cartProduct.id === product.id) {
@@ -65,12 +85,15 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
               quantity: cartProduct.quantity + product.quantity,
             };
           }
+
           return cartProduct;
         })
       );
+
       return;
     }
 
+    // se não, adicione o produto à lista
     setProducts((prev) => [...prev, product]);
   };
 
@@ -106,30 +129,51 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
     );
   };
 
-  const removeProductCart = (productId: string) => {
+  const removeProductFromCart = (productId: string, categoryId: string) => {
     setProducts((prev) =>
-      prev.filter((cartProduct) => cartProduct.id !== productId)
+      prev.filter(
+        (cartProduct) =>
+          !(
+            cartProduct.id === productId &&
+            cartProduct.categoryId === categoryId
+          )
+      )
     );
   };
 
+  [
+    {
+      id: 1,
+      productId: "mouses",
+    },
+    {
+      id: 1,
+      productId: "category",
+    },
+    {
+      id: 1,
+      productId: "keyboards",
+    },
+  ];
+
   return (
-    <cartContext.Provider
+    <CartContext.Provider
       value={{
         products,
-        cartTotalPrice: 0,
-        cartBasePrice: 0,
-        cartTotalDiscount: 0,
-        total,
-        subTotal,
-        totalDiscount,
         addProductToCart,
         decreaseProductQuantity,
         increaseProductQuantity,
-        removeProductCart,
+        removeProductFromCart,
+        total,
+        subtotal,
+        totalDiscount,
+        cartTotalPrice: 0,
+        cartBasePrice: 0,
+        cartTotalDiscount: 0,
       }}
     >
       {children}
-    </cartContext.Provider>
+    </CartContext.Provider>
   );
 };
 

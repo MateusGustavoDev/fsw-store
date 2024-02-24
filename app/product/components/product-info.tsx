@@ -1,16 +1,12 @@
 "use client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { SelectQuantity } from "@/components/ui/select-quantity";
 import { StarsRating } from "@/components/ui/stars-rating";
-import { cartContext } from "@/context/cart";
+import { CartContext } from "@/context/cart";
 import { productWithTotalPrice } from "@/utils/compute-total-price";
 import { formateToBrl } from "@/utils/formate-to-brl";
-import {
-  ArrowDownIcon,
-  ChevronLeft,
-  ChevronRight,
-  TruckIcon,
-} from "lucide-react";
+import { ArrowDownIcon, TruckIcon } from "lucide-react";
 import { useContext, useState } from "react";
 
 interface ProductInfoProps {
@@ -19,7 +15,7 @@ interface ProductInfoProps {
 
 const ProductInfo = ({ product }: ProductInfoProps) => {
   const [quantity, setQuantity] = useState(1);
-  const { addProductToCart } = useContext(cartContext);
+  const { addProductToCart } = useContext(CartContext);
 
   const handleDecreaseQuantityClick = () => {
     setQuantity((prev) => (prev === 1 ? prev : prev - 1));
@@ -77,37 +73,22 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
             </span>
           )}
         </div>
-        <div className="flex mt-4">
-          <Button
-            size="icon"
-            variant="outline"
-            onClick={handleDecreaseQuantityClick}
-          >
-            <ChevronLeft />
-          </Button>
-          <div className="w-10 h-10 flex items-center justify-center">
-            {quantity}
-          </div>
-          <Button
-            size="icon"
-            variant="outline"
-            onClick={handleIncreaseQuantityClick}
-          >
-            <ChevronRight />
-          </Button>
+        <div className="mt-4">
+          <SelectQuantity
+            quantity={quantity}
+            handleDecreaseQuantityClick={handleDecreaseQuantityClick}
+            handleIncreaseQuantityClick={handleIncreaseQuantityClick}
+          />
         </div>
       </div>
       <div className="flex my-8 flex-col gap-2">
         <span className="font-semibold text-md">Descrição</span>
-        <p className="text-sm opacity-70 h-[100px] overflow-hidden text-light-gray font-poppins  text-ellipsis leading-6">
+        <p className="text-sm opacity-70 line-clamp-6 text-light-gray font-poppins text-ellipsis leading-6">
           {product.description}
         </p>
       </div>
       <div className="flex flex-col gap-5">
-        <Button
-          className="bg-dark-purple hover:bg-violet-800 font-poppins py-6 rounded-xl text-white uppercase font-semibold"
-          onClick={handleToCartProductClick}
-        >
+        <Button onClick={handleToCartProductClick}>
           Adicionar ao carrinho
         </Button>
         <div className="flex items-center rounded-xl px-5 gap-2 py-4 justify-between bg-accent">

@@ -1,11 +1,14 @@
 export type Product = {
-    id: string
-    name: string
-    slug: string
-    description: string
-    imageUrls: string[]
-    basePrice: number
-    categoryId: number
-    discountPercentage: number
-  }
-  
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  imageUrls: string[];
+  basePrice: number;
+  categoryId: string;
+  discountPercentage: number;
+};
+
+export interface ProductWithTotalPrice extends Product {
+  totalPrice: number;
+}

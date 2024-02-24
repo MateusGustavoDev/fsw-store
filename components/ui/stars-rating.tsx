@@ -2,6 +2,7 @@ import { Star } from "lucide-react";
 
 interface StarsRatingProps {
   rating: number;
+  size?: "md" | "sm";
 }
 
 function calculeStars(rating: number) {
@@ -23,16 +24,21 @@ function calculeStars(rating: number) {
   return stars;
 }
 
-export function StarsRating({ rating }: StarsRatingProps) {
+export function StarsRating({ rating, size = "md" }: StarsRatingProps) {
   const activeStars = calculeStars(rating);
 
   return (
     <div className="flex gap-2">
       {activeStars.map((star) =>
         star.active ? (
-          <Star key={star.id} size={16} fill="var(--light-purple)" className="text-[var(--light-purple)]" />
+          <Star
+            key={star.id}
+            size={size === "md" ? 16 : 14}
+            fill="var(--light-purple)"
+            className="text-[var(--light-purple)]"
+          />
         ) : (
-          <Star key={star.id} size={16} color="var(--light-purple)" />
+          <Star key={star.id} size={size === "md" ? 16 : 14} color="var(--light-purple)" />
         )
       )}
     </div>
