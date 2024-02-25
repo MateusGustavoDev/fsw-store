@@ -12,23 +12,14 @@ export default function HomePage() {
 
   return (
     <>
-      <ProductBanner
-        imageUrl="/banners/banner-home-01.png"
-        alt="Até 55% de desconto esse mês"
-      />
+      <ProductBanner imageUrl="/banners/banner-home-01.png" alt="Até 55% de desconto esse mês" />
       <Categories />
       <SectionTitle>Mouses</SectionTitle>
       {mouses && <ProductList products={mouses} />}
-      <ProductBanner
-        imageUrl="/banners/banner-home-02.png"
-        alt="Até 55% de desconto esse mês"
-      />
+      <ProductBanner imageUrl="/banners/banner-home-02.png" alt="Até 55% de desconto esse mês" />
       <SectionTitle>teclados</SectionTitle>
       {keyboards && <ProductList products={keyboards} />}
-      <ProductBanner
-        imageUrl="/banners/banner-home-03.png"
-        alt="Até 55% de desconto esse mês"
-      />
+      <ProductBanner imageUrl="/banners/banner-home-03.png" alt="Até 55% de desconto esse mês" />
       <SectionTitle>fones</SectionTitle>
       {headphones && <ProductList products={headphones} />}
     </>

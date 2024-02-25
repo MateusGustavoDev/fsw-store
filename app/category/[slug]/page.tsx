@@ -4,14 +4,7 @@ import ProductItem from '@/components/ui/product-item'
 import { CategoryName } from '@/helpers/category-name'
 import { computeProductTotalPrice } from '@/utils/compute-total-price'
 import { useProductsByCategory } from '@/hooks/use-products-by-category'
-import {
-  HeadphonesIcon,
-  KeyboardIcon,
-  MonitorIcon,
-  MouseIcon,
-  SpeakerIcon,
-  SquareIcon,
-} from 'lucide-react'
+import { HeadphonesIcon, KeyboardIcon, MonitorIcon, MouseIcon, SpeakerIcon, SquareIcon } from 'lucide-react'
 
 export default function CategoryPage({ params }: any) {
   const { data } = useProductsByCategory(params.slug)
@@ -34,12 +27,7 @@ export default function CategoryPage({ params }: any) {
         </BadgeCategory>
       </div>
       <div className="flex flex-wrap gap-8 justify-center">
-        {data?.map((product) => (
-          <ProductItem
-            key={product.id}
-            product={computeProductTotalPrice(product)}
-          />
-        ))}
+        {data?.map((product) => <ProductItem key={product.id} product={computeProductTotalPrice(product)} />)}
       </div>
     </div>
   )

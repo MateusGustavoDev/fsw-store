@@ -32,30 +32,24 @@ const ProductItem = ({ product }: ProductItemProps) => {
           )}
         </div>
         <div className="flex flex-col gap-1">
-          <span className="overflow-hidden text-ellipsis whitespace-nowrap text-sm">
-            {product.name}
-          </span>
+          <span className="overflow-hidden text-ellipsis whitespace-nowrap text-sm">{product.name}</span>
           <div className="flex items-center gap-2">
             {product.discountPercentage > 0 ? (
               <>
-                <span className="font-semibold">
-                  {formateToBrl(Number(product.totalPrice))}
-                </span>
+                <span className="font-semibold">{formateToBrl(Number(product.totalPrice))}</span>
                 <span className="text-xs font-semibold text-dark-gray line-through opacity-75">
                   {formateToBrl(Number(product.basePrice))}
                 </span>
               </>
             ) : (
-              <span className="font-semibold">
-                {formateToBrl(Number(product.basePrice))}
-              </span>
+              <span className="font-semibold">{formateToBrl(Number(product.basePrice))}</span>
             )}
           </div>
         </div>
       </div>
       <div className="mt-1 flex gap-2 items-center">
-        <StarsRating size="sm" rating={3} />
-        <span className="text-light text-xs text-light-gray">(25)</span>
+        <StarsRating size="sm" rating={product.rating} />
+        <span className="text-light text-xs text-light-gray">({product.numberOfReviews})</span>
       </div>
     </Link>
   )

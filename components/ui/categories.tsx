@@ -20,10 +20,7 @@ const Categories = () => {
 
   return (
     <div className="grid grid-cols-2 px-5 my-8 gap-x-4 gap-y-2">
-      {data &&
-        data.map((category) => (
-          <CategoryItem key={category.slug} category={category} />
-        ))}
+      {data && data.map((category) => <CategoryItem key={category.slug} category={category} />)}
     </div>
   )
 }

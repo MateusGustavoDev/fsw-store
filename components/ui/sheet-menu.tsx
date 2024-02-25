@@ -1,21 +1,9 @@
 'use client'
 import { signIn, signOut, useSession } from 'next-auth/react'
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTrigger,
-} from './sheet'
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from './sheet'
 import Link from 'next/link'
 import { Button } from './button'
-import {
-  AlignJustify,
-  HomeIcon,
-  ListOrderedIcon,
-  LogInIcon,
-  LogOutIcon,
-} from 'lucide-react'
+import { AlignJustify, HomeIcon, ListOrderedIcon, LogInIcon, LogOutIcon } from 'lucide-react'
 import { Separator } from './separator'
 import { Avatar, AvatarFallback, AvatarImage } from './avatar'
 
@@ -31,30 +19,21 @@ export function SheetMenu() {
   }
   return (
     <Sheet>
-      <SheetTrigger>
-        <Button
-          variant="outline"
-          className="border border-border rounded-lg w-10 h-10 p-0"
-        >
+      <SheetTrigger asChild>
+        <Button variant="outline" className="border border-border rounded-lg w-10 h-10 p-0">
           <AlignJustify size={22} />
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
-        <SheetHeader className="font-lg font-poppins text-left font-semibold">
-          Menu
-        </SheetHeader>
+        <SheetHeader className="font-lg font-poppins text-left font-semibold">Menu</SheetHeader>
         {status === 'authenticated' && data?.user && (
           <div className="flex flex-col">
             <div className="flex items-center gap-3 py-4">
               <Avatar>
-                <AvatarFallback>
-                  {data.user.name?.[0].toUpperCase()}
-                </AvatarFallback>
+                <AvatarFallback>{data.user.name?.[0].toUpperCase()}</AvatarFallback>
                 {data.user.image && <AvatarImage src={data.user.image} />}
               </Avatar>
-              <span className="font-medium font-poppins">
-                {data?.user?.name}
-              </span>
+              <span className="font-medium font-poppins">{data?.user?.name}</span>
             </div>
             <Separator className="my-2" />
           </div>
@@ -82,10 +61,7 @@ export function SheetMenu() {
           )}
           <SheetClose asChild>
             <Link href="/">
-              <Button
-                variant="outline"
-                className="flex w-full font-poppins rounded-md justify-start gap-2"
-              >
+              <Button variant="outline" className="flex w-full font-poppins rounded-md justify-start gap-2">
                 <HomeIcon size={16} />
                 Início
               </Button>
@@ -93,10 +69,7 @@ export function SheetMenu() {
           </SheetClose>
           <SheetClose asChild>
             <Link href="/catalog">
-              <Button
-                variant="outline"
-                className="flex w-full font-poppins rounded-md justify-start gap-2"
-              >
+              <Button variant="outline" className="flex w-full font-poppins rounded-md justify-start gap-2">
                 <ListOrderedIcon size={16} />
                 Catálogo
               </Button>

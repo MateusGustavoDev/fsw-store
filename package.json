@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix --dir app --dir components --dir context --dir hooks --dir helpers --dir utils --dir types",
+    "lint": "next lint --fix",
     "server": "json-server db.json --port 3033"
   },
   "dependencies": {

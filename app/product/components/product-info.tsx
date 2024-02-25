@@ -32,20 +32,14 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
   return (
     <div className="flex flex-col px-5">
       <div className="flex gap-2 flex-col">
-        <span className="font-normal font-poppins text-xs text-light-gray">
-          Novo | 100 vendidos
-        </span>
+        <span className="font-normal font-poppins text-xs text-light-gray">Novo | 100 vendidos</span>
         <span className="text-lg font-poppins">{product.name}</span>
       </div>
       <div className="flex gap-1 flex-col mt-2">
-        <span className="font-light text-xs font-poppins text-light-purple">
-          Disponível em estoque
-        </span>
+        <span className="font-normal text-xs font-poppins text-light-purple">Disponível em estoque</span>
         <div className="flex gap-2">
           <StarsRating rating={3} />
-          <span className="font-light font-poppins text-light-gray text-xs">
-            (25 avaliações)
-          </span>
+          <span className="font-poppins text-light-gray text-xs">(25 avaliações)</span>
         </div>
       </div>
       <div className="my-4">
@@ -53,24 +47,17 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
           {product.discountPercentage > 0 ? (
             <div className="flex flex-col">
               <div className="flex gap-4">
-                <span className="font-semibold text-xl">
-                  {formateToBrl(Number(product.totalPrice))}
-                </span>
+                <span className="font-semibold text-xl">{formateToBrl(Number(product.totalPrice))}</span>
                 <Badge className="px-2 py-[2px] bg-dark-purple text-white text-xs">
                   <ArrowDownIcon size={14} /> {product.discountPercentage}%
                 </Badge>
               </div>
-              <span className="font-light text-sm font-poppins text-base-gray">
-                De:{' '}
-                <span className="line-through">
-                  {formateToBrl(Number(product.basePrice))}
-                </span>
+              <span className="text-sm font-poppins text-base-gray">
+                De: <span className="line-through">{formateToBrl(Number(product.basePrice))}</span>
               </span>
             </div>
           ) : (
-            <span className="font-semibold text-xl">
-              {formateToBrl(Number(product.totalPrice))}
-            </span>
+            <span className="font-semibold text-xl">{formateToBrl(Number(product.totalPrice))}</span>
           )}
         </div>
         <div className="mt-4">
@@ -88,17 +75,15 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </p>
       </div>
       <div className="flex flex-col gap-5">
-        <Button onClick={handleToCartProductClick}>
-          Adicionar ao carrinho
-        </Button>
+        <Button onClick={handleToCartProductClick}>Adicionar ao carrinho</Button>
         <div className="flex items-center rounded-xl px-5 gap-2 py-4 justify-between bg-accent">
           <div className="flex items-center gap-4">
             <TruckIcon size={28} />
-            <div className="flex flex-col">
-              <span className="text-sm font-poppins font-light">
+            <div className="flex gap-1 flex-col">
+              <span className="text-sm font-poppins">
                 Entrega via <span className="font-bold">FSPackt</span>
               </span>
-              <span className="text-sm font-light font-poppins text-light-purple">
+              <span className="text-sm font-poppins text-light-purple">
                 Envio para <span className="font-bold">todo brasil</span>
               </span>
             </div>

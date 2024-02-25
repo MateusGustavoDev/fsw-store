@@ -22,9 +22,7 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
           />
         </div>
         <div className="rounded-bl-lg justify-center flex rounded-br-lg bg-black-01 py-2">
-          <span className="text-sm text-center font-semibold">
-            {category.name}
-          </span>
+          <span className="text-sm text-center font-semibold">{category.name}</span>
         </div>
       </div>
     </Link>

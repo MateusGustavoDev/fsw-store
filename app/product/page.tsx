@@ -12,9 +12,7 @@ import { Product } from '@/types/product'
 import { Categories } from '@/types/categories'
 
 export default function ProductPage() {
-  const [recommendedProducts, setRecommendedProducts] = useState<
-    Product[] | undefined
-  >()
+  const [recommendedProducts, setRecommendedProducts] = useState<Product[] | undefined>()
   const searchParams = useSearchParams()
   const category = searchParams.get('category')
   const id = searchParams.get('id')

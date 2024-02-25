@@ -1,7 +1,1 @@
-export type Categories =
-  | 'keyboards'
-  | 'monitors'
-  | 'speakers'
-  | 'mouses'
-  | 'mousepads'
-  | 'headphones'
+export type Categories = 'keyboards' | 'monitors' | 'speakers' | 'mouses' | 'mousepads' | 'headphones'

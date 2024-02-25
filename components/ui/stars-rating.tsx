@@ -38,11 +38,7 @@ export function StarsRating({ rating, size = 'md' }: StarsRatingProps) {
             className="text-[var(--light-purple)]"
           />
         ) : (
-          <Star
-            key={star.id}
-            size={size === 'md' ? 16 : 14}
-            color="var(--light-purple)"
-          />
+          <Star key={star.id} size={size === 'md' ? 16 : 14} color="var(--light-purple)" />
         ),
       )}
     </div>

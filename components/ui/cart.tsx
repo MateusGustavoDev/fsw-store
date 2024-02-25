@@ -10,16 +10,12 @@ import { ScrollArea } from './scroll-area'
 import { CartResume } from './cart-resume'
 
 export function Cart() {
-  const { products, cartTotalPrice, cartTotalDiscount, subtotal } =
-    useContext(CartContext)
+  const { products, total, totalDiscount, subtotal } = useContext(CartContext)
 
   return (
     <Sheet>
       <SheetTrigger>
-        <Button
-          variant="outline"
-          className="border border-border rounded-lg w-10 h-10 p-0"
-        >
+        <Button variant="outline" className="border border-border rounded-lg w-10 h-10 p-0">
           <ShoppingCart size={22} />
         </Button>
       </SheetTrigger>
@@ -33,7 +29,7 @@ export function Cart() {
               </BadgeCategory>
             </div>
           </SheetHeader>
-          <ScrollArea className="w-full h-full  overflow-y-auto">
+          <ScrollArea className="w-full h-full  overflow-y-auto pr-2">
             <div className="flex flex-col gap-5">
               {products.map((product) => (
                 <CartItem key={product.id} product={product} />
@@ -41,11 +37,7 @@ export function Cart() {
             </div>
           </ScrollArea>
           <div>
-            <CartResume
-              subtotal={subtotal}
-              descontos={cartTotalDiscount}
-              total={cartTotalPrice}
-            />
+            <CartResume subtotal={subtotal} totalDiscount={totalDiscount} total={total} />
             <Button>Finalizar compra</Button>
           </div>
         </div>

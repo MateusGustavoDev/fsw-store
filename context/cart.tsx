@@ -39,18 +39,8 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
   const [products, setProducts] = useState<CartProduct[]>([])
 
   useEffect(() => {
-    console.log(products)
-  }, [products])
-
-  useEffect(() => {
-    setProducts(
-      JSON.parse(localStorage.getItem('@fsw-store/cart-products') || '[]'),
-    )
+    setProducts(JSON.parse(localStorage.getItem('@fsw-store/cart-products') || '[]'))
   }, [])
-
-  useEffect(() => {
-    localStorage.setItem('@fsw-store/cart-products', JSON.stringify(products))
-  }, [products])
 
   // Total sem descontos
   const subtotal = useMemo(() => {
@@ -66,17 +56,12 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
     }, 0)
   }, [products])
 
-  const totalDiscount = subtotal - total
-
   const addProductToCart = (product: CartProduct) => {
     const productIsAlreadyOnCart = products.some(
-      (cartProduct) =>
-        cartProduct.id === product.id &&
-        cartProduct.categoryId === product.categoryId,
+      (cartProduct) => cartProduct.id === product.id && cartProduct.categoryId === product.categoryId,
     )
 
     if (productIsAlreadyOnCart) {
-      console.log('if (productIsAlreadyOnCart) - True')
       setProducts((prev) =>
         prev.map((cartProduct) => {
           if (cartProduct.id === product.id) {
@@ -131,13 +116,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const removeProductFromCart = (productId: string, categoryId: string) => {
     setProducts((prev) =>
-      prev.filter(
-        (cartProduct) =>
-          !(
-            cartProduct.id === productId &&
-            cartProduct.categoryId === categoryId
-          ),
-      ),
+      prev.filter((cartProduct) => !(cartProduct.id === productId && cartProduct.categoryId === categoryId)),
     )
   }
 
@@ -155,6 +134,8 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
       productId: 'keyboards',
     },
   ]
+
+  const totalDiscount = subtotal - total
 
   return (
     <CartContext.Provider

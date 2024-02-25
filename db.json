@@ -45,7 +45,9 @@
       ],
       "basePrice": 650,
       "categoryId": "mouses",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 5,
+      "numberOfReviews": 76
     },
     {
       "id": "2",
@@ -60,7 +62,9 @@
       ],
       "basePrice": 750,
       "categoryId": "mouses",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 4,
+      "numberOfReviews": 28
     },
     {
       "id": "3",
@@ -75,7 +79,9 @@
       ],
       "basePrice": 300,
       "categoryId": "mouses",
-      "discountPercentage": 15
+      "discountPercentage": 15,
+      "rating": 3,
+      "numberOfReviews": 45
     },
     {
       "id": "4",
@@ -90,7 +96,9 @@
       ],
       "basePrice": 600,
       "categoryId": "mouses",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 3,
+      "numberOfReviews": 53
     },
     {
       "id": "5",
@@ -105,7 +113,9 @@
       ],
       "basePrice": 350,
       "categoryId": "mouses",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 2,
+      "numberOfReviews": 11
     },
     {
       "id": "6",
@@ -120,7 +130,9 @@
       ],
       "basePrice": 350,
       "categoryId": "mouses",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 5,
+      "numberOfReviews": 19
     }
   ],
   "mousepads": [
@@ -137,7 +149,9 @@
       ],
       "basePrice": 950,
       "categoryId": "mousepads",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 4,
+      "numberOfReviews": 33
     },
     {
       "id": "2",
@@ -152,7 +166,9 @@
       ],
       "basePrice": 150,
       "categoryId": "mousepads",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 3,
+      "numberOfReviews": 55
     },
     {
       "id": "3",
@@ -167,7 +183,9 @@
       ],
       "basePrice": 200,
       "categoryId": "mousepads",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 5,
+      "numberOfReviews": 101
     },
     {
       "id": "4",
@@ -182,7 +200,9 @@
       ],
       "basePrice": 250,
       "categoryId": "mousepads",
-      "discountPercentage": 15
+      "discountPercentage": 15,
+      "rating": 3,
+      "numberOfReviews": 51
     },
     {
       "id": "5",
@@ -197,7 +217,9 @@
       ],
       "basePrice": 300,
       "categoryId": "mousepads",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 5,
+      "numberOfReviews": 77
     },
     {
       "id": "6",
@@ -212,7 +234,9 @@
       ],
       "basePrice": 300,
       "categoryId": "mousepads",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 3,
+      "numberOfReviews": 22
     }
   ],
   "keyboards": [
@@ -229,7 +253,9 @@
       ],
       "basePrice": 650,
       "categoryId": "keyboards",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 4,
+      "numberOfReviews": 19
     },
     {
       "id": "2",
@@ -244,7 +270,9 @@
       ],
       "basePrice": 750,
       "categoryId": "keyboards",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 3,
+      "numberOfReviews": 44
     },
     {
       "id": "3",
@@ -259,7 +287,9 @@
       ],
       "basePrice": 440,
       "categoryId": "keyboards",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 5,
+      "numberOfReviews": 37
     },
     {
       "id": "4",
@@ -274,7 +304,9 @@
       ],
       "basePrice": 700,
       "categoryId": "keyboards",
-      "discountPercentage": 15
+      "discountPercentage": 15,
+      "rating": 2,
+      "numberOfReviews": 15
     },
     {
       "id": "5",
@@ -289,7 +321,9 @@
       ],
       "basePrice": 500,
       "categoryId": "keyboards",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 5,
+      "numberOfReviews": 59
     },
     {
       "id": "6",
@@ -304,7 +338,9 @@
       ],
       "basePrice": 400,
       "categoryId": "keyboards",
-      "discountPercentage": 25
+      "discountPercentage": 25,
+      "rating": 4,
+      "numberOfReviews": 23
     }
   ],
   "headphones": [
@@ -321,7 +357,9 @@
       ],
       "basePrice": 750,
       "categoryId": "headphones",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 4,
+      "numberOfReviews": 64
     },
     {
       "id": "2",
@@ -336,7 +374,9 @@
       ],
       "basePrice": 1200,
       "categoryId": "headphones",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 3,
+      "numberOfReviews": 56
     },
     {
       "id": "3",
@@ -351,7 +391,9 @@
       ],
       "basePrice": 1500,
       "categoryId": "headphones",
-      "discountPercentage": 15
+      "discountPercentage": 15,
+      "rating": 5,
+      "numberOfReviews": 12
     },
     {
       "id": "4",
@@ -366,7 +408,9 @@
       ],
       "basePrice": 550,
       "categoryId": "headphones",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 3,
+      "numberOfReviews": 16
     },
     {
       "id": "5",
@@ -381,7 +425,9 @@
       ],
       "basePrice": 250,
       "categoryId": "headphones",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 4,
+      "numberOfReviews": 44
     },
     {
       "id": "6",
@@ -396,7 +442,9 @@
       ],
       "basePrice": 200,
       "categoryId": "headphones",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 5,
+      "numberOfReviews": 16
     }
   ],
   "monitors": [
@@ -413,7 +461,9 @@
       ],
       "basePrice": 1500,
       "categoryId": "monitores",
-      "discountPercentage": 15
+      "discountPercentage": 15,
+      "rating": 4,
+      "numberOfReviews": 74
     },
     {
       "id": "2",
@@ -428,7 +478,9 @@
       ],
       "basePrice": 2000,
       "categoryId": "monitores",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 3,
+      "numberOfReviews": 12
     },
     {
       "id": "3",
@@ -443,7 +495,9 @@
       ],
       "basePrice": 2500,
       "categoryId": "monitores",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 3,
+      "numberOfReviews": 11
     },
     {
       "id": "4",
@@ -458,7 +512,9 @@
       ],
       "basePrice": 3200,
       "categoryId": "monitores",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 4,
+      "numberOfReviews": 36
     },
     {
       "id": "5",
@@ -473,7 +529,9 @@
       ],
       "basePrice": 3500,
       "categoryId": "monitores",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 4,
+      "numberOfReviews": 54
     },
     {
       "id": "6",
@@ -488,7 +546,9 @@
       ],
       "basePrice": 4200,
       "categoryId": "monitores",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 3,
+      "numberOfReviews": 18
     }
   ],
   "speakers": [
@@ -505,7 +565,9 @@
       ],
       "basePrice": 1200,
       "categoryId": "speakers",
-      "discountPercentage": 5
+      "discountPercentage": 5,
+      "rating": 3,
+      "numberOfReviews": 14
     },
     {
       "id": "2",
@@ -520,7 +582,9 @@
       ],
       "basePrice": 4500,
       "categoryId": "speakers",
-      "discountPercentage": 15
+      "discountPercentage": 15,
+      "rating": 4,
+      "numberOfReviews": 47
     },
     {
       "id": "3",
@@ -535,7 +599,9 @@
       ],
       "basePrice": 4000,
       "categoryId": "speakers",
-      "discountPercentage": 10
+      "discountPercentage": 10,
+      "rating": 5,
+      "numberOfReviews": 76
     },
     {
       "id": "4",
@@ -550,7 +616,9 @@
       ],
       "basePrice": 3200,
       "categoryId": "speakers",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 4,
+      "numberOfReviews": 15
     },
     {
       "id": "5",
@@ -565,7 +633,9 @@
       ],
       "basePrice": 3500,
       "categoryId": "speakers",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 3,
+      "numberOfReviews": 12
     },
     {
       "id": "6",
@@ -580,7 +650,9 @@
       ],
       "basePrice": 2500,
       "categoryId": "speakers",
-      "discountPercentage": 0
+      "discountPercentage": 0,
+      "rating": 4,
+      "numberOfReviews": 71
     }
   ]
 }

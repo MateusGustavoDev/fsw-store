@@ -16,9 +16,7 @@ export default function CatalogPage() {
         </BadgeCategory>
       </div>
       <div className="grid grid-cols-2 gap-8">
-        {categories?.map((category) => (
-          <CategoryItem key={category.slug} category={category} />
-        ))}
+        {categories?.map((category) => <CategoryItem key={category.slug} category={category} />)}
       </div>
     </div>
   )

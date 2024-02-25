@@ -7,6 +7,8 @@ export type Product = {
   basePrice: number
   categoryId: string
   discountPercentage: number
+  rating: number
+  numberOfReviews: number
 }
 
 export interface ProductWithTotalPrice extends Product {

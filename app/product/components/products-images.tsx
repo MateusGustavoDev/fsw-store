@@ -29,9 +29,7 @@ const ProductImages = ({ imagesUrls, name }: ProductImagesProps) => {
               onClick={() => setSelectedImage(image)}
               key={image}
               className={`w-20 bg-bl h-20 border rounded-lg ${
-                image === selectedImage
-                  ? 'border-light-purple'
-                  : 'border-transparent'
+                image === selectedImage ? 'border-light-purple' : 'border-transparent'
               } bg-black-01 items-center justify-center border flex`}
             >
               <Image
