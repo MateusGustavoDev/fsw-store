@@ -24,7 +24,7 @@ export function CartResume({ subtotal, totalDiscount, total }: CartResumeProps) 
       <Separator className="bg-border w-full h-[0.063rem]" />
       <div className="w-full flex items-center py-3 justify-between">
         <span className="text-sm">Descontos:</span>
-        <span className="text-sm">{formateToBrl(totalDiscount)}</span>
+        <span className="text-sm">- {formateToBrl(totalDiscount)}</span>
       </div>
       <Separator className="bg-border w-full h-[0.063]" />
       <div className="w-full flex items-center py-3 justify-between">

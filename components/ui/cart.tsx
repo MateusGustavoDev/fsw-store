@@ -8,9 +8,23 @@ import { CartContext } from '@/context/cart'
 import { CartItem } from './cart-item'
 import { ScrollArea } from './scroll-area'
 import { CartResume } from './cart-resume'
+import { createCheckout } from '@/app/actions/checkout'
+import { loadStripe } from '@stripe/stripe-js'
 
 export function Cart() {
   const { products, total, totalDiscount, subtotal } = useContext(CartContext)
+
+  async function handleFinishPurchaseClick() {
+    const checkout = await createCheckout(products)
+
+    console.log(checkout)
+
+    // const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY)
+
+    // stripe?.redirectToCheckout({
+    //   sessionId: checkout.id,
+    // })
+  }
 
   return (
     <Sheet>
@@ -38,7 +52,7 @@ export function Cart() {
           </ScrollArea>
           <div>
             <CartResume subtotal={subtotal} totalDiscount={totalDiscount} total={total} />
-            <Button>Finalizar compra</Button>
+            <Button onClick={handleFinishPurchaseClick}>Finalizar compra</Button>
           </div>
         </div>
       </SheetContent>

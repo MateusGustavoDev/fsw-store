@@ -2,7 +2,6 @@
 import Categories from '@/components/ui/categories'
 import { ProductBanner } from './components/product-banner'
 import { ProductList } from '@/components/ui/product-list'
-import { SectionTitle } from '@/components/ui/section-title'
 import { useProductsByCategory } from '@/hooks/use-products-by-category'
 
 export default function HomePage() {
@@ -12,16 +11,35 @@ export default function HomePage() {
 
   return (
     <>
-      <ProductBanner imageUrl="/banners/banner-home-01.png" alt="Até 55% de desconto esse mês" />
+      <div className="block lg:hidden">
+        <ProductBanner imageUrl="/banners/banner-home-01.png" alt="Até 55% de desconto esse mês" />
+      </div>
+      <div className="hidden lg:block">
+        <ProductBanner imageUrl="/banners/banner-home-01-full.png" alt="Até 55% de desconto esse mês" />
+      </div>
       <Categories />
-      <SectionTitle>Mouses</SectionTitle>
       {mouses && <ProductList products={mouses} />}
-      <ProductBanner imageUrl="/banners/banner-home-02.png" alt="Até 55% de desconto esse mês" />
-      <SectionTitle>teclados</SectionTitle>
+
+      <div className="block lg:hidden">
+        <ProductBanner imageUrl="/banners/banner-home-02.png" alt="Até 55% de desconto esse mês" />
+      </div>
+
+      <div className="hidden gap-4 my-10 max-w-[1250px] px-5 m-auto lg:flex">
+        <ProductBanner imageUrl="/banners/banner-mouses.png" alt="Até 55% de desconto esse mês" />
+        <ProductBanner imageUrl="/banners/banner-fones.png" alt="Até 55% de desconto esse mês" />
+      </div>
+
       {keyboards && <ProductList products={keyboards} />}
-      <ProductBanner imageUrl="/banners/banner-home-03.png" alt="Até 55% de desconto esse mês" />
-      <SectionTitle>fones</SectionTitle>
-      {headphones && <ProductList products={headphones} />}
+
+      <div className="block lg:hidden">
+        <ProductBanner imageUrl="/banners/banner-home-03.png" alt="Até 55% de desconto esse mês" />
+      </div>
+
+      <div className="hidden lg:block max-w-[1400px] my-10 m-auto">
+        <ProductBanner imageUrl="/banners/banner-frete.png" alt="Até 55% de desconto esse mês" />
+      </div>
+
+      {mouses && <ProductList products={mouses} />}
     </>
   )
 }

@@ -2,25 +2,20 @@ import type { Config } from 'tailwindcss'
 
 const config = {
   darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
+  content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   prefix: '',
   theme: {
     container: {
       center: true,
       padding: '2rem',
       screens: {
+        '1xl': '1250px',
         '2xl': '1400px',
       },
     },
     extend: {
       backgroundImage: {
-        'category-items-gradient':
-          'linear-gradient(45deg, #5033C3 0%, rgba(80, 51, 195, 0.20) 100%)',
+        'category-items-gradient': 'linear-gradient(45deg, #5033C3 0%, rgba(80, 51, 195, 0.20) 100%)',
       },
       colors: {
         'black-01': 'var(--black-01)',

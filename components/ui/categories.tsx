@@ -19,7 +19,7 @@ const Categories = () => {
   })
 
   return (
-    <div className="grid grid-cols-2 px-5 my-8 gap-x-4 gap-y-2">
+    <div className="flex max-w-[1250px] mt-10 max-md:my-8 max-[1250px]:grid max-[1250px]:grid-cols-2 px-5 gap-2 justify-center m-auto w-full">
       {data && data.map((category) => <CategoryItem key={category.slug} category={category} />)}
     </div>
   )
