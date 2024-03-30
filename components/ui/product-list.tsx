@@ -5,13 +5,14 @@ import { SectionTitle } from './section-title'
 
 interface ProductListProps {
   products: Product[]
+  category: string
 }
 
-export const ProductList = ({ products }: ProductListProps) => {
+export const ProductList = ({ products, category }: ProductListProps) => {
   return (
     <div className="w-full max-w-[1250px] my-8 px-5 m-auto">
-      <SectionTitle>Mouses</SectionTitle>
-      <div className="flex w-full gap-4 lg:gap-6 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+      <SectionTitle>{category}</SectionTitle>
+      <div className="flex w-full gap-6 max-md:gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
         {products.map((product) => (
           <ProductItem key={product.id} product={computeProductTotalPrice(product)} />
         ))}
