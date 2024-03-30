@@ -31,16 +31,15 @@ export default function ProductPage() {
   }, [category])
 
   return (
-    <div>
+    <div className="w-full lg:mt-10">
       {data && recommendedProducts && (
         <div className="flex flex-col gap-6">
-          <div>
+          <div className="max-w-[1250px] w-full lg:flex lg:px-5 gap-8 m-auto">
             <ProductImages name={data.name} imagesUrls={data.imageUrls} />{' '}
             <ProductInfo product={computeProductTotalPrice(data)} />
           </div>
           <div className="mt-8">
-            <SectionTitle>produtos Recomendados</SectionTitle>
-            <ProductList products={recommendedProducts} />
+            <ProductList category="Produtos recomendados" products={recommendedProducts} />
           </div>
         </div>
       )}

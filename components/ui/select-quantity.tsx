@@ -14,11 +14,11 @@ export function SelectQuantity({
 }: SelectQuantityProps) {
   return (
     <div className="flex">
-      <Button size="icon" variant="outline" onClick={handleDecreaseQuantityClick} className="h-8 w-8">
+      <Button size="icon" variant="outline" onClick={handleDecreaseQuantityClick} className="h-8 md:bg-black-01 w-8">
         <ChevronLeft />
       </Button>
       <div className="w-8 h-8 flex items-center justify-center">{quantity}</div>
-      <Button size="icon" variant="outline" onClick={handleIncreaseQuantityClick} className="h-8 w-8">
+      <Button size="icon" variant="outline" onClick={handleIncreaseQuantityClick} className="h-8 md:bg-black-01 w-8">
         <ChevronRight />
       </Button>
     </div>
