@@ -8,7 +8,7 @@ export default function CatalogPage() {
   const { data: categories } = useCategories()
 
   return (
-    <div className="px-5">
+    <div className="px-5 max-w-[1250px] m-auto">
       <div className="my-8">
         <BadgeCategory>
           <ShapesIcon />
