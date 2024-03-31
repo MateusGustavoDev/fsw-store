@@ -2,14 +2,10 @@
 import Categories from '@/components/ui/categories'
 import { ProductBanner } from './components/product-banner'
 import { ProductList } from '@/components/ui/product-list'
-import { useProductsByCategory } from '@/hooks/use-products-by-category'
 import { BannerCarousel } from './components/banner-carousel'
+import { mouses, keyboards, headphones } from '@/db'
 
 export default function HomePage() {
-  const { data: mouses } = useProductsByCategory('mouses')
-  const { data: keyboards } = useProductsByCategory('keyboards')
-  const { data: headphones } = useProductsByCategory('headphones')
-
   return (
     <>
       <div className="block md:hidden mt-7">
