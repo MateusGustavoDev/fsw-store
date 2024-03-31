@@ -14,13 +14,13 @@ const ProductItem = ({ product }: ProductItemProps) => {
   return (
     <Link href={`/product?id=${product.id}&category=${product.categoryId}`}>
       <div className="flex w-max flex-col gap-3 lg:gap-2">
-        <div className="relative flex h-[10.850rem] w-[9.75rem] lg:w-[180px] lg:h-[180px] hover:border-zinc-600 border items-center justify-center gap-4 rounded-lg bg-black-01">
+        <div className="relative hover:bg-zinc-900 flex h-[10.850rem] w-[9.75rem] lg:w-[180px] lg:h-[180px] group border items-center justify-center gap-4 rounded-lg bg-black-01">
           <Image
             src={product.imageUrls[0]}
             width={0}
             height={0}
             sizes="100vw"
-            className="h-[5.625rem] w-auto"
+            className="h-[5.625rem] w-auto transition-transform duration-300 transform group-hover:scale-110"
             style={{ objectFit: 'contain' }}
             alt={product.name}
           />

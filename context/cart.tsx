@@ -1,5 +1,5 @@
 'use client'
-
+import CartToast from '@/components/ui/cart-toast'
 import { ProductWithTotalPrice } from '@/types/product'
 import { ReactNode, createContext, useEffect, useMemo, useState } from 'react'
 
@@ -80,6 +80,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
 
     // se não, adicione o produto à lista
     setProducts((prev) => [...prev, product])
+    CartToast({ type: 'success', message: 'Produto adicionado ao carrinho!' })
   }
 
   const decreaseProductQuantity = (productId: string) => {

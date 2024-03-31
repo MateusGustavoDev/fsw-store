@@ -1,8 +1,8 @@
 'use client'
-import { Badge } from '@/components/ui/badge'
 import { Category } from '@/types/category'
 import { HeadphonesIcon, KeyboardIcon, MonitorIcon, MouseIcon, SpeakerIcon, SquareIcon } from 'lucide-react'
 import Link from 'next/link'
+import { Button } from './button'
 
 interface CategoryItemProps {
   category: Category
@@ -20,13 +20,13 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
 
   return (
     <Link href={`/category/${category.slug}`}>
-      <Badge
+      <Button
         variant="outline"
-        className="w-[195px] max-md:py-2 py-3 hover:border-zinc-600 rounded-lg gap-2 max-[1250px]:w-full flex justify-center"
+        className="w-[195px] max-md:py-2 py-3 hover:bg-black-01 rounded-lg gap-2 max-[1250px]:w-full flex justify-center"
       >
         {categoryIcons[category.slug as keyof typeof categoryIcons]}
         <span className="text-md max-xs:text-sm font-semibold">{category.name}</span>
-      </Badge>
+      </Button>
     </Link>
   )
 }

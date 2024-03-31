@@ -19,14 +19,15 @@ export default function CategoryPage({ params }: any) {
   }
 
   return (
-    <div className="px-5 w-full">
+    <div className="px-5 w-full  max-w-[1260px] m-auto">
       <div className="my-8">
         <BadgeCategory>
           {categoryIcons[params.slug as keyof typeof categoryIcons]}
           {CategoryName[params.slug as keyof typeof CategoryName]}
         </BadgeCategory>
       </div>
-      <div className="flex flex-wrap gap-8 justify-center">
+      <div className="flex flex-wrap gap-7 justify-center ">
+        {data?.map((product) => <ProductItem key={product.id} product={computeProductTotalPrice(product)} />)}
         {data?.map((product) => <ProductItem key={product.id} product={computeProductTotalPrice(product)} />)}
       </div>
     </div>

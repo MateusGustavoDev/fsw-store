@@ -48,3 +48,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #52525b;
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0e1013;
+}

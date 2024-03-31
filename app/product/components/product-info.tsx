@@ -8,6 +8,7 @@ import { productWithTotalPrice } from '@/utils/compute-total-price'
 import { formateToBrl } from '@/utils/formate-to-brl'
 import { ArrowDownIcon, TruckIcon } from 'lucide-react'
 import { useContext, useState } from 'react'
+import { Toaster } from 'react-hot-toast'
 
 interface ProductInfoProps {
   product: productWithTotalPrice
@@ -31,6 +32,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
 
   return (
     <div className="flex flex-col lg:rounded-xl max-w-[1250px] w-full lg:max-w-[472px] lg:h-[670px]  lg:p-10 lg:bg-black-01 px-5">
+      <Toaster />
       <div className="flex gap-2 flex-col">
         <span className="font-normal font-poppins text-xs lg:text-sm text-light-gray">Novo | 100 vendidos</span>
         <span className="text-lg lg:text-2xl font-poppins">{product.name}</span>

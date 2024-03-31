@@ -56,7 +56,7 @@ export function SheetMenu() {
               className="flex w-full font-poppins rounded-md justify-start gap-2"
             >
               <LogOutIcon size={16} />
-              Fazer logout
+              Sair
             </Button>
           )}
           <SheetClose asChild>

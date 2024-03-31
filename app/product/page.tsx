@@ -6,10 +6,9 @@ import ProductInfo from './components/product-info'
 import { computeProductTotalPrice } from '@/utils/compute-total-price'
 import { getProductsByCategory } from '@/hooks/use-products-by-category'
 import { ProductList } from '@/components/ui/product-list'
-import { SectionTitle } from '@/components/ui/section-title'
-import { useEffect, useState } from 'react'
 import { Product } from '@/types/product'
 import { Categories } from '@/types/categories'
+import { Suspense, useEffect, useState } from 'react'
 
 export default function ProductPage() {
   const [recommendedProducts, setRecommendedProducts] = useState<Product[] | undefined>()
@@ -31,18 +30,21 @@ export default function ProductPage() {
   }, [category])
 
   return (
-    <div className="w-full lg:mt-10">
-      {data && recommendedProducts && (
-        <div className="flex flex-col gap-6">
-          <div className="max-w-[1250px] w-full lg:flex lg:px-5 gap-8 m-auto">
-            <ProductImages name={data.name} imagesUrls={data.imageUrls} />{' '}
-            <ProductInfo product={computeProductTotalPrice(data)} />
+    <Suspense>
+      <div className="w-full lg:mt-10">
+        {/* Use o Suspense do React para envolver o código */}
+        {data && recommendedProducts && (
+          <div className="flex flex-col gap-6">
+            <div className="max-w-[1250px] w-full lg:flex lg:px-5 gap-8 m-auto">
+              <ProductImages name={data.name} imagesUrls={data.imageUrls} />{' '}
+              <ProductInfo product={computeProductTotalPrice(data)} />
+            </div>
+            <div className="mt-8">
+              <ProductList category="Produtos recomendados" products={recommendedProducts} />
+            </div>
           </div>
-          <div className="mt-8">
-            <ProductList category="Produtos recomendados" products={recommendedProducts} />
-          </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </Suspense>
   )
 }

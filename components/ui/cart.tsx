@@ -28,9 +28,14 @@ export function Cart() {
 
   return (
     <Sheet>
-      <SheetTrigger>
-        <Button variant="outline" className="border border-border rounded-lg w-10 h-10 p-0">
+      <SheetTrigger asChild>
+        <Button variant="outline" className="border relative border-border hover:bg-black-01 rounded-lg w-10 h-10 p-0">
           <ShoppingCart size={22} />
+          {products.length > 0 ? (
+            <div className="p-1 px-3 absolute font-semibold text-xs -top-4 -right-2 rounded-full bg-dark-purple">
+              {products.length}
+            </div>
+          ) : null}
         </Button>
       </SheetTrigger>
       <SheetContent side="right" className="max-w-96 w-full p-5">
@@ -52,7 +57,7 @@ export function Cart() {
           </ScrollArea>
           <div>
             <CartResume subtotal={subtotal} totalDiscount={totalDiscount} total={total} />
-            <Button onClick={handleFinishPurchaseClick}>Finalizar compra</Button>
+            <Button>Finalizar compra</Button>
           </div>
         </div>
       </SheetContent>
