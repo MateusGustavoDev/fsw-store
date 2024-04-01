@@ -4,5 +4,3 @@ import NextAuth from 'next-auth'
 const handler = NextAuth(authOptions)
 
 export { handler as GET, handler as POST }
-
-console.log('key :' + process.env.NEXT_PUBLIC_NEXTAUTH_SECRET)
